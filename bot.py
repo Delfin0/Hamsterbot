@@ -1,5 +1,5 @@
 import discord
-import numpy
+import numpy as np
 
 intents = discord.Intents.all()
 client = discord.Client(command_prefix='!', intents=intents)
