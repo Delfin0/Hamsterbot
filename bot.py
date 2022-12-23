@@ -1,6 +1,7 @@
 import discord
 import numpy as np
 
+TOKEN = 'ODU0MzEyMTUzMDc4NTYyODM3.GHhsuN.Anp10g6maHef4DPESI_x8rY9TSADnOARZKRPxM'
 intents = discord.Intents.all()
 client = discord.Client(command_prefix='!', intents=intents)
 random0 = ['Igen.', 'Nem.']
@@ -27,6 +28,6 @@ async def on_message(message):
       await message.channel.send(np.random.choice(random0))
     if message.content.startswith('!ih'):
       await message.channel.send(np.random.choice(random1))
+ODU0MzEyMTUzMDc4NTYyODM3.GHhsuN.Anp10g6maHef4DPESI_x8rY9TSADnOARZKRPxM
 
-
-client.run('ODU0MzEyMTUzMDc4NTYyODM3.GHhsuN.Anp10g6maHef4DPESI_x8rY9TSADnOARZKRPxM')
+client.run(TOKEN)
