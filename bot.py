@@ -23,9 +23,9 @@ async def on_message(message):
     if message.content.startswith('!hamstercraft'):
         embed=discord.Embed(title="🕹️ Hamstercraft 🕹️", description="**Információk a Hamstercraft minecraft szerverről.** \n A Hamstercraft egy túléló minecraft szerver. \n **IP cím:** hamstercraft.craft.run \n **Verzió:** 1.19(Java) \n **Admin:** Pergerot", color=0x00ff62)
         await message.channel.send(embed=embed)
-    if message.content.startswith('&in'):
+    if message.content.startswith('!in'):
       await message.channel.send(np.random.choice(random0))
-    if message.content.startswith('&ih'):
+    if message.content.startswith('!ih'):
       await message.channel.send(np.random.choice(random1))
 
 
